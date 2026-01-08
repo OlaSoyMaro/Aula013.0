@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aula013._0.MainPage"
+             Title=""
+             BackgroundColor="#00FFFFFF">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <VerticalStackLayout Grid.Row="0" Grid.Column="0"
+                             Padding="10" Spacing="5"
+                             HorizontalOptions="Start"
+                             VerticalOptions="Start">
+           
+            <Label x:Name="lblEmail"
+                   FontSize="14"
+                   FontFamily="8bit"
+                   TextColor="LightSkyBlue"/>
+            <Button Text="Cerrar sesión"
+                    x:Name="BtnCerrarSesion"
+                    Clicked="BtnCerrarSesion_Clicked"
+                    BackgroundColor="Transparent"
+                    TextColor="Red"
+                    FontFamily="8bit"
+                    FontSize="14"/>
+        </VerticalStackLayout>
+
+        <Label Grid.Row="0" Grid.Column="1"
+            Text="Aula013"
+            FontSize="90"
+            FontFamily="8bit"
+            TextColor="LightSkyBlue"
+            HorizontalOptions="Center"
+            Margin="0,20,0,20"
+            FontAttributes="Bold" 
+            VerticalOptions="Center"/>
+
+        <VerticalStackLayout Grid.Row="1" Grid.Column="0"
+                             Padding="10" Spacing="10">
+            <Label Text="Publicidad" 
+                   FontFamily="8bit" 
+                   TextColor="LightSkyBlue" 
+                   FontAttributes="Bold" />
+            <Frame BorderColor="Black" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="500 monedas por tan solo" 
+                           FontFamily="8bit" 
+                           TextColor="LightSkyBlue" />
+                    <Label Text="0.02 peso..." 
+                           FontFamily="8bit" 
+                           TextColor="LightSkyBlue" />
+                    <Label Text="¿Quieres más vidas?" 
+                           FontFamily="8bit" 
+                           TextColor="LightSkyBlue" />
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1" Grid.Column="1"
+                             VerticalOptions="Center"
+                             Spacing="20">
+            <Button Text="Iniciar Partida"
+                    x:Name="BtnPartida"
+                    FontFamily="xxd"
+                    FontSize="30"
+                    Clicked="BtnPartida_Clicked"
+                    BackgroundColor="Transparent"
+                    TextColor="LightSkyBlue"/>
+
+            <Button Text="Opciones"
+                    x:Name="BtnOpciones"
+                    FontFamily="xxd"
+                    FontSize="30"
+                    Clicked="BtnOpciones_Clicked"
+                    BackgroundColor="Transparent"
+                    TextColor="LightSkyBlue"/>
+
+            <Button Text="Logros"
+                    x:Name="BtnLogros"
+                    FontFamily="xxd"
+                    FontSize="30"
+                    Clicked="BtnLogros_Clicked"
+                    BackgroundColor="Transparent"
+                    TextColor="LightSkyBlue"/>
+
+            <Button Text="Salir del juego"
+                    x:Name="BtnSalir"
+                    FontFamily="xxd"
+                    FontSize="30"
+                    Clicked="BtnSalir_Clicked"
+                    BackgroundColor="Transparent"
+                    TextColor="LightSkyBlue"/>
+        </VerticalStackLayout>
+
+        <Frame Grid.Row="1" Grid.Column="2"
+               BorderColor="Black"
+               CornerRadius="10"
+               Margin="10"
+               Padding="10">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Extra"  
+                       TextColor="LightSkyBlue" 
+                       FontAttributes="Bold" />
+                <Entry Placeholder="Apoya" />
+                <Entry Placeholder="Tips" IsPassword="True" />
+                <Entry Placeholder="PromoCode" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- 🔹 Versión arriba a la derecha -->
+        <Label Grid.Row="0" Grid.Column="2"
+               Text="V.0.0001 View Alpha"
+               FontSize="16"
+               TextColor="LightSkyBlue"
+               HorizontalOptions="End"
+               Margin="0,10,10,0" />
+
+        <Label Grid.Row="2" Grid.ColumnSpan="3"
+               Text="Un juego desarrollado por Paquequipo (equipo 6)..."
+               TextColor="LightSkyBlue"
+               HorizontalOptions="Center"
+               Margin="0,10,0,10" />
+    </Grid>
+</ContentPage>

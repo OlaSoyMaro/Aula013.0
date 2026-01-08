@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aula013._0.Register"
+             Title="Register">
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <Label Text="Crear Cuenta"
+               FontSize="28"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="txtUsuario"
+               Placeholder="Usuario nuevo"
+               Keyboard="Text" />
+        <Entry x:Name="txtEmail" Placeholder="Correo electrónico" Keyboard="Email" />
+
+        <Entry x:Name="txtPassword"
+               Placeholder="Contraseña"
+               IsPassword="True" />
+
+        <Entry x:Name="txtPassword2"
+               Placeholder="Confirmar contraseña"
+               IsPassword="True" />
+        <Button
+             x:Name="Resgisterbt"
+             Clicked="Resgisterbt_Clicked"
+            Text="Registrarse">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aula013._0.PartidasGuardadas"
+             Title="PartidasGuardadas">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Button Text="Regresar"
+        x:Name="btnRegresar"
+        Clicked="btnRegresar_Clicked"
+        BackgroundColor="Transparent"
+        TextColor="LightSkyBlue"
+        FontFamily="8bit"
+        FontSize="10"
+        HorizontalOptions="Center"/>
+            <Button Text="Crear Nuevo Slot"
+                    x:Name="btnNuevoSlot"
+                    Clicked="btnNuevoSlot_Clicked"
+                    BackgroundColor="#444"
+                    TextColor="White"/>
+
+            <Label x:Name="lbler"
+                   Text="No hay slots creados aún"
+                   TextColor="Gray"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <CollectionView x:Name="slotList"
+                            IsVisible="False"
+                            SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="White"
+                               CornerRadius="10"
+                               Padding="15"
+                               BackgroundColor="#222">
+                            <Grid RowDefinitions="Auto,Auto">
+                                <VerticalStackLayout Grid.Row="0" Spacing="5">
+                                    <Label Text="{Binding Nombre}" 
+                                           TextColor="White" 
+                                           FontAttributes="Bold" 
+                                           FontSize="18"/>
+                                    <Label Text="{Binding TiempoJugado}" 
+                                           TextColor="LightGray" 
+                                           FontSize="14"/>
+                                    <Label Text="{Binding Ubicacion}" 
+                                           TextColor="LightGray" 
+                                           FontSize="14"/>
+                                </VerticalStackLayout>
+
+                                <HorizontalStackLayout Grid.Row="1" Spacing="20" HorizontalOptions="Center">
+
+                                                        <Button Text="Nueva Partida"
+                                IsVisible="{Binding EsNuevaPartida}"
+                                Clicked="btnLanzar_Clicked"
+                                BackgroundColor="#2ecc71"
+                                TextColor="White"/>
+
+                                                        <Button Text="Continuar"
+                                IsVisible="{Binding ExisteArchivo}"
+                                Clicked="btnLanzar_Clicked"
+                                BackgroundColor="#3498db"
+                                TextColor="White"/>
+
+                                                        <Button Text="Editar"
+                                Clicked="btnEditar_Clicked"
+                                BackgroundColor="#f39c12"/>
+
+                                                        <Button Text="Eliminar"
+                                Clicked="btnEliminar_Clicked"
+                                BackgroundColor="#e74c3c"/>
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

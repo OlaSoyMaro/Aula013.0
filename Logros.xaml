@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aula013._0.Logros"
+             Title="Logros">
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                         Spacing="15"
+                         VerticalOptions="FillAndExpand">
+
+            <!-- Logro 1 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <Grid RowDefinitions="Auto,Auto">
+                    <HorizontalStackLayout Spacing="15" Grid.Row="0">
+                        <Image Source="oguri.png" WidthRequest="60" HeightRequest="60"/>
+                        <VerticalStackLayout>
+                            <Label Text="Oguri la gorda" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="Te comiste el juego" FontSize="14"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <Label Text="Completado: No"
+                       FontSize="12"
+                       HorizontalOptions="Start"
+                       VerticalOptions="End"
+                       Grid.Row="1"/>
+                </Grid>
+            </Frame>
+            <!-- Logro 2 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <Grid RowDefinitions="Auto,Auto">
+                    <HorizontalStackLayout Spacing="15" Grid.Row="0">
+                        <Image Source="oguri.png" WidthRequest="60" HeightRequest="60"/>
+                        <VerticalStackLayout>
+                            <Label Text="Oguri la gorda 2" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="Te comiste el juego" FontSize="14"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <Label Text="Completado: No"
+                       FontSize="12"
+                       HorizontalOptions="Start"
+                       VerticalOptions="End"
+                       Grid.Row="1"/>
+                </Grid>
+            </Frame>
+            <!-- Logro 3 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <Grid RowDefinitions="Auto,Auto">
+                    <HorizontalStackLayout Spacing="15" Grid.Row="0">
+                        <Image Source="oguri.png" WidthRequest="60" HeightRequest="60"/>
+                        <VerticalStackLayout>
+                            <Label Text="Oguri la gorda 3" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="Te comiste el juego" FontSize="14"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <Label Text="Completado: No"
+            FontSize="12"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            Grid.Row="1"/>
+                </Grid>
+            </Frame>
+            <!-- Logro 4 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <Grid RowDefinitions="Auto,Auto">
+                    <HorizontalStackLayout Spacing="15" Grid.Row="0">
+                        <Image Source="oguri.png" WidthRequest="60" HeightRequest="60"/>
+                        <VerticalStackLayout>
+                            <Label Text="Oguri la gorda 4" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="Te comiste el juego" FontSize="14"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <Label Text="Completado: No"
+            FontSize="12"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            Grid.Row="1"/>
+                </Grid>
+            </Frame>
+            <!-- Logro 5 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <Grid RowDefinitions="Auto,Auto">
+                    <HorizontalStackLayout Spacing="15" Grid.Row="0">
+                        <Image Source="oguri.png" WidthRequest="60" HeightRequest="60"/>
+                        <VerticalStackLayout>
+                            <Label Text="Oguri la gorda 5" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="Te comiste el juego" FontSize="14"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <Label Text="Completado: No"
+            FontSize="12"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            Grid.Row="1"/>
+                </Grid>
+            </Frame>
+            <!-- Logro 6 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <Grid RowDefinitions="Auto,Auto">
+                    <HorizontalStackLayout Spacing="15" Grid.Row="0">
+                        <Image Source="oguri.png" WidthRequest="60" HeightRequest="60"/>
+                        <VerticalStackLayout>
+                            <Label Text="Oguri la gorda 6" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="Te comiste el juego" FontSize="14"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <Label Text="Completado: No"
+            FontSize="12"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            Grid.Row="1"/>
+                </Grid>
+            </Frame>
+            <!-- Logro 7 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <Grid RowDefinitions="Auto,Auto">
+                    <HorizontalStackLayout Spacing="15" Grid.Row="0">
+                        <Image Source="oguri.png" WidthRequest="60" HeightRequest="60"/>
+                        <VerticalStackLayout>
+                            <Label Text="Oguri la gorda 7" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="Te comiste el juego" FontSize="14"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                    <Label Text="Completado: No"
+            FontSize="12"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            Grid.Row="1"/>
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

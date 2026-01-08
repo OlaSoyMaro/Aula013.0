@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Aula013._0"
+       x:Class="Aula013._0.AppShell">
+
+    <ShellContent Route="InicioSesion"
+                  ContentTemplate="{DataTemplate local:InicioSesion}" />
+
+    <ShellContent Route="Register"
+                  ContentTemplate="{DataTemplate local:Register}" />
+
+    <ShellContent Route="MainPage"
+                  ContentTemplate="{DataTemplate local:MainPage}" />
+
+    <ShellContent Route="Opciones"
+                  ContentTemplate="{DataTemplate local:Opciones}" />
+
+    <ShellContent Route="Logros"
+                  ContentTemplate="{DataTemplate local:Logros}" />
+
+    <ShellContent Route="PartidasGuardadas"
+                  ContentTemplate="{DataTemplate local:PartidasGuardadas}" />
+</Shell>
+
