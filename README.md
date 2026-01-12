@@ -2,7 +2,7 @@ NOTA: El programa NO FUNCIONARÁ si no se descarga a parte el proyecto de GODOT.
 
 Godot se descarga a parte por un link de mediafire:
 
-[http://www.mediafire.com/folder/7m6pwp45o2975,5cinmyrn4dd3l/shared](https://www.mediafire.com/file/cgb5ucw0epxevmp/aula-013-master.rar/file)
+https://www.mediafire.com/file/cgb5ucw0epxevmp/aula-013-master.rar/file
 
 
 INSTRUCCIONES DE INSTALACIÓN: 
